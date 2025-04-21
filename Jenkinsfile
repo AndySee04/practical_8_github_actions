@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                powershell 'java -jar build/libs/p8.jar'
+                bat 'java -jar build/libs/p8.jar'
             }
         }
     }
