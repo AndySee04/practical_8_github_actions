@@ -8,8 +8,8 @@ pipeline {
         }
         stage('Build') {
             steps {
-                // powershell 'gradle clean build'
-                bat 'gradle build'
+                powershell 'gradle clean build'
+                // bat 'gradle build'
             }
         }
         stage('Test') {
